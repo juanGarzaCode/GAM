@@ -1,0 +1,132 @@
+body{font-family:"Open Sans", Arial, sans-serif; font-size: 16px;}
+.color2{background: #ecf0f1;}
+.color3{background: #dfe4ea;}
+.color1{background: #f1f2f6;}
+
+/* ---------- Logos top ----------- */
+header .container .logosTop{ color: #666666;}
+header .container .logosTop img{width: 50px;}
+header .container .logosTop .uanl{border-left: 1px solid #666666;padding-left: 20px;}
+header .container .logosTop .gam{border-right: 1px solid #666666;padding-right: 20px;}
+header .logounal{background: rgba(255,255,255, .7);}
+
+/* ----------- Imagen Header ----------- */
+.bgGAM {background-image: url('../img/Duela.jpg');background-repeat: no-repeat;min-height: 100vh;
+    background-size: cover;background-position: 20%;background-attachment: fixed;}
+.bgOtro{background: #636e72;}
+.bgGAM::before{content: '';width: 100%;min-height: 100vh;position: absolute;top: 0;left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255,.4), rgba(0,0,0,.7)); opacity: .8;}
+
+/* ---------- Menu navegación ----------- */
+header .navbar{background-color: rgba(0, 0, 0, .5);}
+.navbar .navbar-nav .nav-item a{color: #fff; font-family: "Lato";transition: .3s;}
+.navbar .navbar-nav .nav-item a:hover{font-size: 17px; font-weight: 700;}
+header .navbar .navbar-nav .active > a{color: #f1c40f; }
+.navbar .navbar-nav .nav-item .dropdown-menu{background-color: rgba(0, 0, 0, .5);}
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{background-color: #fff;color: #000;}
+.navbar-toggler {border-color: #fff;} 
+.navbar-toggler-icon{background-image: url('../img/menuB.png');} 
+
+.nav-2 {background: rgba(41, 128, 185, .8) !important;} 
+.nav-2 .dropdown-menu{background-color: rgba(41, 128, 185, .8) !important;}
+
+
+/* ----------- Titulos Header ---------- */
+header .textos {margin: 200px 0;}
+header .textos .primera{font-size: 45px;line-height: 35px;margin-bottom: 30px;font-weight: 700;position: relative;animation: text 2s linear 1;}
+header .textos .segunda{font-size: 35px;line-height: 25px;margin-bottom: 100px;font-weight: 600;position: relative;animation: text2 2s linear 1;}
+
+/* ----------- Efectos Titulo ---------- */
+@keyframes text { 0%{margin-bottom: -40px;}30%{letter-spacing: 13px;margin-bottom: -40px;}80%{letter-spacing: 8px;margin-bottom: -40px;}} 
+@keyframes text2 {0%{z-index: -1;}30%{z-index: -1;}80%{z-index: -1;}} 
+
+/* ---------- Main ---------- */
+main h3{font-size: 40px;font-weight: 600;margin: 40px 0;padding-top: 20px;text-align: center;}
+main p{line-height: 28px;margin-bottom: 45px;}
+main .acerca p{text-align: justify;}
+main strong{font-size: 17px; color: #3895ea;}
+ .acerca p{text-align: right; align-items: center; color: #5a5a5a;}
+ .acerca h3{color: #2c3e50;}
+ .acerca .director{font-size: 20px;font-weight: bold;}
+ .actividad p{color: #5a5a5a;} .actividad h3{color: #2c3e50;} .actividad .otroColor{color: #34495e;}
+ .liga h3{color: #e67e22;} .liga h4{color: #2c3e50;}
+ .contacto h3, .ubicacion h3{color: #2980b9;} .horario h3, .aviso h3{color: #3498db;} .horario ul li{color: #5a5a5a;}
+  main .mapa{width: 100%; overflow: hidden;}
+ .inner {overflow: hidden;}.inner img {transition: all 1.5s ease;} .inner:hover img {transform: scale(1.5);}
+ .card:hover{width: 100%;}
+.letraUANL{color: #c0392b;}
+
+/* ---------- Servicios ---------*/
+.servicios{margin-bottom: 40px;}
+.servicios .box {padding: 20px;max-width: 32% !important;margin-left: 1px;background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);border-radius: 4px;border: 2px solid #3e83d1;
+    margin-top: 20px;margin-bottom: 20px;box-sizing: border-box;overflow: hidden;transition: .3s;}
+.servicios .box:nth-child(2){border: 2px solid #27ae60;}
+.servicios .box:nth-child(3){border: 2px solid #e67e22;}
+.servicios .box .icon {width: 90px;height: 90px;background: #000;display: flex;justify-content: center;
+    align-items: center;margin:0 auto;border-radius: 50%;transition: 1s;}
+.servicios .box .icon img {width: 60px;}
+.servicios .box:nth-child(1) .icon{box-shadow: 0 0 0 0 #3498db; background: #3498db;}
+.servicios .box:nth-child(1):hover .icon {box-shadow: 0 0 0 400px #3498db;}
+.servicios .box:nth-child(2) .icon{box-shadow: 0 0 0 0 #27ae60; background: #27ae60;}
+.servicios .box:nth-child(2):hover .icon {box-shadow: 0 0 0 400px #27ae60;}
+.servicios .box:nth-child(3) .icon{box-shadow: 0 0 0 0 #e67e22; background: #e67e22;}
+.servicios .box:nth-child(3):hover .icon {box-shadow: 0 0 0 400px #e67e22;}
+.servicios .box .content {position: relative;z-index: 1;transition: .5s;}
+.servicios .box:hover .content {color: #fff;}
+.servicios .box .content h4 {font-size: 25px;font-weight: 400;margin: 10px 0;padding: 0;}
+.servicios .box .content{text-align: center;}
+.servicios .box .content p {margin: 0;padding: 0;font-size: 16px;font-weight: 300;}
+.servicios .box .content a {display: inline-block;padding: 15px 20px;margin: 10px 0;background: #fff;
+    border-radius: 4px;text-decoration: none;color: #000;font-size: 16px;
+    font-family: "Lato", Arial, sans-serif;font-weight: 400;margin-top: 20px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);}
+.servicios .box .content a:hover {box-shadow: none;background: #fff;padding: 14px 19px;}
+
+/* ----------- Footer ---------- */
+footer .icon-dres i {padding: 13px 5px;font-size: 18px;}
+footer .direccion {background: #3c4045;padding-top: 30px;padding-bottom: 15px;color: #fff;text-align: center;}
+footer .direccion .titulo {font-size: 30px;line-height: 30px;font-weight: 400;margin-bottom: 30px;
+    padding-bottom: 15px;}
+footer .direccion .redes {text-align: center;padding: 20px 0;align-items: center;}
+footer .direccion .redes a {padding: 10px;display: inline-block;margin: 0 20px;width: 50px;font-size: 22px;
+    color: #fff;background: #3c4045;border-radius: 100px;}
+footer .direccion .redes a:hover{text-decoration: none;}
+footer .direccion .redes a.facebook{background: #3b5998; border: none;}
+footer .direccion .redes a.youtube{background: #cd201f;}
+footer .direccion .redes a.twiter{background: #55aaec;}
+footer .footer .footer2 {background: #2d3436;color: #fff;padding: 15px;text-align: center;}
+footer .footer .footer2 p {font-size: 14px;font-weight: 400;letter-spacing: 1.5px;}
+
+/* ----------- botonArriba ------------ */
+.irArriba{display: none;padding: 10px 15px;background: rgba(0, 0, 0, .4);font-size: 30px;color: #fff;
+    cursor: pointer;position: fixed;bottom: 50px;right: 20px;border-radius: 10%;z-index: 1000000;}
+.irArriba:hover {    background: rgba(0, 0, 0, .7);}
+
+/* ---------- Media ---------- */
+@media screen and (min-width: 1300px){ /* ----- Extra large ----- */
+    footer .footer .container{width: 100%;max-width: none;}
+}
+
+@media screen and (max-width: 992px){ /* ----- Medium y menores ----- */
+    header .textos .primera{font-size: 32px;}
+    header .textos .segunda{font-size: 22px}
+    .servicios .box {padding: 40px;max-width: 100% !important;}   
+    .servicios .box .content a{width: 50%;}
+    .acerca p{text-align: center;}
+    main .mapa { width: 600px; height: 100vh;}
+}
+
+@media screen and (max-width: 768px){ /* ----- Small y menores ----- */
+    header .textos .primera{animation: none }
+    header .textos .segunda{animation: none;}
+    main .mapa { max-width: 500px; height: 100vh;}
+}
+
+@media screen and (max-width: 490px){
+    header .textos .primera{font-size: 26px;}
+    header .textos .segunda{font-size: 16px}
+    footer .footer .footer2 p {font-size: 12px;letter-spacing: 1px;}
+    main .table tbody tr td {font-size: 13px;}
+    main .mapa { max-width: 360px; height: 100vh;}
+}
